@@ -6,7 +6,6 @@ pipeline {
     }
     parameters {
         booleanParam(description: 'Skip Tests', name: 'skipTests', defaultValue: false)
-        choice(description: 'Nexus Upload', name: 'uploadArtifacts', choices: nexusUploadOptions)
         booleanParam(description: 'Nexus IQ', name: 'NEXUS_IQ_SCAN', defaultValue: false)
         booleanParam(description: 'SonarQube', name: 'SONARQUBE_SCAN', defaultValue: false)
     }
